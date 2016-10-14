@@ -4,4 +4,7 @@ from django.contrib import admin
 
 from .models import Doufu
 
-admin.site.register(Doufu)
+class DoufuAdmin(admin.ModelAdmin):
+    fields = ['doufu_name', 'raw_material', 'introduce', 'methods']
+
+admin.site.register(Doufu, DoufuAdmin)

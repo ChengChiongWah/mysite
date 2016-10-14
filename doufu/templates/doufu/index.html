@@ -1,0 +1,9 @@
+{% if lastest_doufu_list %}
+    <ul>
+    {% for doufu in lastest_doufu_list %}
+        <li>{{ doufu }}</li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No any information of doufu</p>
+{% endif %}
