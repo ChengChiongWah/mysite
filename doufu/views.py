@@ -7,7 +7,7 @@ from .models import Doufu
 # Create your views here.
 
 def index(request):
-    lastest_doufu_list = Doufu.objects.all()[:]
+    lastest_doufu_list = Doufu.objects.all()[:3]
     template = loader.get_template('doufu/index.html')
     context = {
         'lastest_doufu_list': lastest_doufu_list,

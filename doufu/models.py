@@ -11,6 +11,6 @@ class Doufu(models.Model):
     introduce = models.CharField(max_length=1000)                               #简介
     methods = models.CharField(max_length=1500)                                 #做法
 
-    def __unicode__(self):
+    def __str__(self):
         return "{0},{1}, {2}, {3}, {4}".format(self.doufu_name,self.publish_date,self.raw_material,self.introduce,self.methods)
 
