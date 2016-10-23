@@ -10,7 +10,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Narrow Jumbotron Template for Bootstrap</title>
+    <title>Doufu 豆腐</title>
 
     <!-- Bootstrap core CSS -->
     <link href="{% static 'doufu/css/bootstrap.min.css' %}" rel="stylesheet">
@@ -85,7 +85,7 @@
                                     <img class="featurette-image img-responsive" data-src="holder.js/100x100/auto" alt="Generic placeholder image">
                                 </div>
                                 <div class="col-md-10">
-                                    <p class="lead">相关菜谱相关菜谱相关菜谱 celerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+                                    <p >相关菜谱相关菜谱相关菜谱 celerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
                                 </div>
                             </div>
                         </div>
@@ -111,24 +111,36 @@
                         </div>
                     </div>
 
-
-                    <!-- 标签卡切换的javascript代码 -->
-                    <script src="{% static 'doufu/js/jquery.min.js' %}"></script>
-                    <script src="{% static 'doufu/js/transition.js' %}"></script>
-                    <script src="{% static 'doufu/js/tab.js' %}"></script>
-
                     <hr class="featurette-divider">
 
                 </div>
 
                 <div class="col-md-2">
-                    <li><a href="#">标签</a></li>
-                    <li><a href="#">豆制品</a></li>
+                      <div class="panel-group" id="accordion">
+                          <div >
+                              <div class="panel-heading">
+                                  <h5 class="panel-title">
+                                      <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">标签 </a>
+                                  </h5>
+                              </div>
+                              <div id="collapseTwo" class="panel-collapse collapse">
+                                  <div class="panel-body" style="color:#922">22222</div>
+                              </div>
+                          </div>
+                          <div>
+                              <div class="panel-heading">
+                                  <h5 class="panel-title">
+                                      <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">豆制品</a>
+                                  </h5>
+                              </div>
+                              <div id="collapseThree" class="panel-collapse collapse">
+                                  <div class="panel-body" style="color:#922">33333</div>
+                              </div>
+
+                          </div>
+                      </div>
                 </div>
             </div>
-
-
-
 
             <!-- /END THE FEATURETTES -->
 
@@ -143,6 +155,12 @@
 
     </div>
     <!-- /container -->
+
+                    <!-- 标签卡切换的javascript代码 -->
+                    <script src="{% static 'doufu/js/jquery.min.js' %}"></script>
+                    <script src="{% static 'doufu/js/transition.js' %}"></script>
+                    <script src="{% static 'doufu/js/tab.js' %}"></script>
+                     <script src="{% static 'doufu/js/collapse.js' %}"></script>
 
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
