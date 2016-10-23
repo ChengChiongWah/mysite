@@ -13,14 +13,14 @@
     <title>Narrow Jumbotron Template for Bootstrap</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="{% static 'doufu/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'doufu/css/bootstrap.min.css' %}" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="{% static 'doufu/jumbotron-narrow.css' %}'" rel="stylesheet">
+    <link href="{% static 'doufu/css/jumbotron-narrow.css' %}" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="{% static 'doufu/ie-emulation-modes-warning.js' %}"></script>
+    <script src="{% static 'doufu/js/ie-emulation-modes-warning.js' %}"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -36,7 +36,7 @@
             <ul class="nav nav-pills pull-right" role="tablist">
                 <li role="presentation" class="active"><a href="#">Home</a></li>
                 <li role="presentation"><a href="#">About</a></li>
-                <li role="presentation"><a href="#">Login</a></li>
+                <li role="presentation"><a href="/admin">Login</a></li>
             </ul>
             <h3 class="text-muted">Project name</h3>
         </div>
@@ -46,7 +46,7 @@
 
             <div class="row featurette">
                 <div class="col-md-3">
-                    <img class="img-circle" data-src="holder.js/150x150/auto" alt="Generic placeholder image" src="doufu.jpg">
+                    <img class="img-circle" data-src="holder.js/150x150/auto" alt="Generic placeholder image" src="{% static 'doufu/images/doufu.jpg' %}">
                 </div>
                 <div class="col-md-9">
                     <h2 class="featurette-heading">豆腐 </h2>
@@ -97,7 +97,7 @@
                                     <img class="featurette-image img-responsive" data-src="holder.js/100x100/auto" alt="Generic placeholder image">
                                 </div>
                                 <div class="col-md-10">
-                                    <p class="lead">食材详情食材详情食材详情食材详情Donec ullamcorper nulla non metus auctor fringilla,rsus commodo.</p>
+                                    <p class="lead">食材详情食材详情食材详情食材详情Donec ullamcorper nulla non ,rsus commodo.</p>
                                 </div>
                             </div>
                             <div class="row featurette">
@@ -105,7 +105,7 @@
                                     <img class="featurette-image img-responsive" data-src="holder.js/100x100/auto" alt="Generic placeholder image">
                                 </div>
                                 <div class="col-md-10">
-                                    <p class="lead">食材详情食材详情食材详情食材详情Donec ullamcorper nulla non metus auctor fringilla,rsus commodo.</p>
+                                    <p class="lead">食材详情食材详情食材详情食材详情Donec ullamcorper nulla non ,rsus commodo.</p>
                                 </div>
                             </div>
                         </div>
@@ -113,9 +113,9 @@
 
 
                     <!-- 标签卡切换的javascript代码 -->
-                    <script src="{% static 'doufu/jquery.min.js' %}"></script>
-                    <script src="{% static 'doufu/transition.js' %}"></script>
-                    <script src="{% static 'doufu/tab.js' %}"></script>
+                    <script src="{% static 'doufu/js/jquery.min.js' %}"></script>
+                    <script src="{% static 'doufu/js/transition.js' %}"></script>
+                    <script src="{% static 'doufu/js/tab.js' %}"></script>
 
                     <hr class="featurette-divider">
 
@@ -146,8 +146,8 @@
 
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="{% static 'doufu/ie10-viewport-bug-workaround.js' %}"></script>
-    <script src="{% static 'doufu/docs.min.js' %}"></script>
+    <script src="{% static 'doufu/js/ie10-viewport-bug-workaround.js' %}"></script>
+    <script src="{% static 'doufu/js/docs.min.js' %}"></script>
 </body>
 
 </html>
